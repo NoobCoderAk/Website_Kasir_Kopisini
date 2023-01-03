@@ -1,0 +1,15 @@
+cara menambahkan user pada terminal :
+
+php artisan tinker
+
+*setelah sudah masuk*
+
+$user = new \App\Models\User();  
+
+$user
+$user->name = 'Master'; 
+$user->email = 'master@gmail.com';     
+$user->password =bcrypt ('12345678');  
+$user->level = 0; 
+$user->save(); 
+$user->get();   
